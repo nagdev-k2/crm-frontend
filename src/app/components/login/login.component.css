@@ -1,0 +1,15 @@
+.layout-container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 30px 0;
+}
+
+.login-form {
+	min-width: 100%;
+	max-width: 300px;
+	width: 100%;
+}

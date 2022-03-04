@@ -1,0 +1,35 @@
+.toolbar-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 50%;
+}
+
+.menu-spacer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout {
+  background-color: white;
+  color: purple;
+  border-radius: 50px;
+}
+
+.logout:hover {
+  color: white;
+  background-color: palevioletred;
+}
+
+.active {
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.mat-button {
+  margin-left: 10px;
+}

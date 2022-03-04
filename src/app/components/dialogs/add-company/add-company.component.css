@@ -1,0 +1,4 @@
+.mat-dialog-content {
+  display: grid !important;
+  width: 300px !important;
+}

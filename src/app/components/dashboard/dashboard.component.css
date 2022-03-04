@@ -1,0 +1,16 @@
+.dashboard-body {
+  padding: 10px;
+}
+
+.profile-pic {
+  height: 40px;
+  width: auto;
+  border-radius: 50px;
+  margin:auto;
+  align-self: center;
+}
+
+.inactive-row {
+  background-color: rgba(0,0,0, 0.5);
+  content: "Inactive";
+}

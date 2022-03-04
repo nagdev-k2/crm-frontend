@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div class="toolbar-row">
+      <h1 class="title">Inseer CRM</h1>
+      <div class="menu-spacer" *ngIf="this.isAuthenticated == true">
+        <a
+          mat-button
+          [routerLink]="['/dashboard', 'companies']"
+          (click)="onSelect('companies')"
+          class="{{this.selected == 'companies' ? 'active' : ''}}"
+        >
+          Companies
+        </a>
+        <a
+          mat-button
+          [routerLink]="['/dashboard', 'employees']"
+          (click)="onSelect('employees')"
+          class="{{this.selected == 'employees' ? 'active' : ''}}"
+        >
+          Employees
+        </a>
+        <a
+          mat-button
+          [routerLink]="['/dashboard', 'customers']"
+          (click)="onSelect('customers')"
+          class="{{this.selected == 'customers' ? 'active' : ''}}"
+        >
+          Customers
+        </a>
+        <a
+          mat-button
+          class="logout"
+          routerLink="/"
+          (click)="logout()"
+        >
+          Logout
+        </a>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

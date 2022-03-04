@@ -1,0 +1,18 @@
+<form [formGroup]="AddCompanyForm" (ngSubmit)="onSubmit()">
+  <h1 mat-dialog-title>{{this.buttonName}} {{this.type}}</h1>
+  <div mat-dialog-content>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" formControlName="name" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Location" formControlName="location" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Industry" formControlName="industry" required>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button cdkFocusInitial>{{this.buttonName}}</button>
+  </div>
+</form>
